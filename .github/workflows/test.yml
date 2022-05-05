@@ -42,7 +42,7 @@ jobs:
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         env:
           ECR_IMAGE: ${{ steps.login-ecr.outputs.registry }}/${{ env.IMAGE_NAME }}
         with:
